@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagem-inicial {
+    width: 90%;
+    max-width: 100%;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+
+.imagem-inicial img {
+    width: 100%;
+    max-width: 100%;
+
+}
+
+section.filmes {
+    border: 2px solid black;
+    width: 90vw;
+    margin: 2rem auto;
+}
+
+.links {
+    margin-bottom: 2rem;
+}
+
+.links a {
+    font-size: 3vw;
+    text-decoration: none;
+    color: white;
+}
+
+.links span {
+    font-size: 2rem;
+    color: white;
+}
+
+.cartazes {
+    display: flex;
+}
+
+.filme {
+    width: 20%;
+}
+
+.cartazes img {
+    width: 80%;
+}
+
+
+
+section.top-5 {
+    width: 90%;
+    max-width: 100%;
+
+    margin: 2rem auto;
+}
+
+.texto-top-5 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.top-filmes {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: white;
+}
+
+.top-filmes-texto {
+    color: #666666;
+    font-size: 3vw;
+}
+
+.filmes-top-5 {
+    display: flex;
+    border: 2px solid #666;
+    padding: 1rem;
+}
+
+div.filme-top-5 {
+    width: 20%;
+    position: relative;
+
+}
+
+.filme-top-5 span {
+    font-size: 5rem;
+    position: absolute;
+    bottom: 0;
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    font-weight: bolder;
+}
+
+.filmes-top-5 img {
+    width: 80%;
+}
+
+
+
+section.em-breve {
+    width: 90%;
+    max-width: 100%;
+    /* border: 2px solid red; */
+    margin: 2rem auto;
+}
+
+.texto-em-breve span {
+    font-size: 4vw;
+    color: white;
+}
+
+.texto-em-breve a {
+    font-size: 2vw;
+    color: #256df2;
+    text-decoration: none;
+}
+
+.texto-em-breve a:hover {
+    text-decoration: underline;
+}
+
+.filmes-em-breve {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.filmes-em-breve>div {
+    width: 20%;
+    /* border: 2px solid red; */
+}
+
+.filmes-em-breve img {
+    width: 80%;
+    height: 100%;
+}
+
+.homem-aranha-responsive {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .homem-aranha-responsive {
+        display: block;
+    }
+
+    .homem-aranha-screen,
+    .filme-responsive {
+        display: none;
+    }
+
+    .filme {
+        width: 100%;
+    }
+
+    .links a,
+    .links span {
+        font-size: 4vw;
+        text-decoration: none;
+        color: white;
+    }
+
+    .top-5 {
+        width: 130%;
+        max-width: 130vw;
+        overflow-x: scroll;
+        /* border: 2px solid red; */
+    }
+
+    .filmes-top-5{
+        width: 130%;
+        max-width: 130vw;
+        gap: 2rem;
+        border: none;
+        
+    }
+
+    div.filme-top-5 {
+        width: 40%;
+        position: relative;
+
+    }
+
+    .filmes-top-5 img {
+        width: 100%;
+    }
+}
